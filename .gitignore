@@ -1,0 +1,6 @@
+.idea/
+.DS_Store
+build-*/
+testxr/testxr.xcodeproj/*
+!testxr/testxr.xcodeproj/project.pbxproj
+xcuserdata/

@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 110;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		565852000000000000000010 /* src/openxr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 56585200000000000000000B /* src/openxr.cpp */; };
+		565852000000000000000011 /* src/apple_backend.mm in Sources */ = {isa = PBXBuildFile; fileRef = 56585200000000000000000C /* src/apple_backend.mm */; };
+		565852000000000000000012 /* libopenxr_loader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 565852000000000000000002 /* libopenxr_loader.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		565852000000000000000009 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CD317A8307D74890013999F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 565852000000000000000001;
+			remoteInfo = VisionXR;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3CD317B0307D74890013999F /* testxr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testxr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		565852000000000000000002 /* libopenxr_loader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libopenxr_loader.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		56585200000000000000000B /* src/openxr.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = src/openxr.cpp; sourceTree = "<group>"; };
+		56585200000000000000000C /* src/apple_backend.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = src/apple_backend.mm; sourceTree = "<group>"; };
+		56585200000000000000000D /* src/backend.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = src/backend.hpp; sourceTree = "<group>"; };
+		56585200000000000000000E /* src/pose.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = src/pose.hpp; sourceTree = "<group>"; };
+		56585200000000000000000F /* include/visionxr/host.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = include/visionxr/host.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3CD317BF307D748B0013999F /* Exceptions for "testxr" folder in "testxr" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+				libopenxr_loader.a,
+			);
+			target = 3CD317AF307D74890013999F /* testxr */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		3CD317B2307D74890013999F /* testxr */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3CD317BF307D748B0013999F /* Exceptions for "testxr" folder in "testxr" target */,
+			);
+			explicitFolders = (
+				Resources/Materials,
+			);
+			path = testxr;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3CD317AD307D74890013999F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+				565852000000000000000012 /* libopenxr_loader.a in Frameworks */,
+			);
+		};
+		565852000000000000000004 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3CD317A7307D74890013999F = {
+			isa = PBXGroup;
+			children = (
+				3CD317B2307D74890013999F /* testxr */,
+				56585200000000000000000A /* VisionXR sources */,
+				3CD317B1307D74890013999F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3CD317B1307D74890013999F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CD317B0307D74890013999F /* testxr.app */,
+				565852000000000000000002 /* libopenxr_loader.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		56585200000000000000000A /* VisionXR sources */ = {
+			isa = PBXGroup;
+			children = (
+				56585200000000000000000B /* src/openxr.cpp */,
+				56585200000000000000000C /* src/apple_backend.mm */,
+				56585200000000000000000D /* src/backend.hpp */,
+				56585200000000000000000E /* src/pose.hpp */,
+				56585200000000000000000F /* include/visionxr/host.h */,
+			);
+			name = "VisionXR sources";
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3CD317AF307D74890013999F /* testxr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CD317C0307D748B0013999F /* Build configuration list for PBXNativeTarget "testxr" */;
+			buildPhases = (
+				3CD317AC307D74890013999F /* Sources */,
+				3CD317AD307D74890013999F /* Frameworks */,
+				3CD317AE307D74890013999F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				565852000000000000000008 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				3CD317B2307D74890013999F /* testxr */,
+			);
+			name = testxr;
+			productName = testxr;
+			productReference = 3CD317B0307D74890013999F /* testxr.app */;
+			productType = "com.apple.product-type.application";
+		};
+		565852000000000000000001 /* VisionXR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 565852000000000000000005 /* Build configuration list for PBXNativeTarget "VisionXR" */;
+			buildPhases = (
+				565852000000000000000003 /* Sources */,
+				565852000000000000000004 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			name = VisionXR;
+			productName = openxr_loader;
+			productReference = 565852000000000000000002 /* libopenxr_loader.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3CD317A8307D74890013999F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2700;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					3CD317AF307D74890013999F = {
+						CreatedOnToolsVersion = 27.0;
+					};
+				};
+			};
+			buildConfigurationList = 3CD317AB307D74890013999F /* Build configuration list for PBXProject "testxr" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3CD317A7307D74890013999F;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3CD317B1307D74890013999F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				565852000000000000000001 /* VisionXR */,
+				3CD317AF307D74890013999F /* testxr */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3CD317AE307D74890013999F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3CD317AC307D74890013999F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		565852000000000000000003 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				565852000000000000000010 /* src/openxr.cpp in Sources */,
+				565852000000000000000011 /* src/apple_backend.mm in Sources */,
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		565852000000000000000008 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 565852000000000000000001 /* VisionXR */;
+			targetProxy = 565852000000000000000009 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3CD317C1307D748B0013999F /* Debug configuration for PBXNativeTarget "testxr" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AN9TMNRUVN;
+				ENABLE_PREVIEWS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"XR_USE_GRAPHICS_API_METAL=1",
+					"XR_EXTENSION_PROTOTYPES=1",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../include",
+					"$(VISIONXR_OPENXR_INCLUDE_DIR)",
+				);
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(BUILT_PRODUCTS_DIR)",
+					"$(PROJECT_DIR)/testxr",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					ARKit,
+					"-framework",
+					CompositorServices,
+					"-framework",
+					Metal,
+					"-framework",
+					Foundation,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = valvesoftware.testxr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 7;
+				XROS_DEPLOYMENT_TARGET = "$(RECOMMENDED_XROS_DEPLOYMENT_TARGET)";
+			};
+			name = Debug;
+		};
+		3CD317C2307D748B0013999F /* Release configuration for PBXNativeTarget "testxr" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AN9TMNRUVN;
+				ENABLE_PREVIEWS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"XR_USE_GRAPHICS_API_METAL=1",
+					"XR_EXTENSION_PROTOTYPES=1",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../include",
+					"$(VISIONXR_OPENXR_INCLUDE_DIR)",
+				);
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(BUILT_PRODUCTS_DIR)",
+					"$(PROJECT_DIR)/testxr",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					ARKit,
+					"-framework",
+					CompositorServices,
+					"-framework",
+					Metal,
+					"-framework",
+					Foundation,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = valvesoftware.testxr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 7;
+				XROS_DEPLOYMENT_TARGET = "$(RECOMMENDED_XROS_DEPLOYMENT_TARGET)";
+			};
+			name = Release;
+		};
+		3CD317C3307D748B0013999F /* Debug configuration for PBXProject "testxr" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = xros;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VISIONXR_OPENXR_INCLUDE_DIR = "$(PROJECT_DIR)/../build-vision-sim/_deps/openxr_sdk-src/include";
+				XROS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Debug;
+		};
+		3CD317C4307D748B0013999F /* Release configuration for PBXProject "testxr" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = xros;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				VISIONXR_OPENXR_INCLUDE_DIR = "$(PROJECT_DIR)/../build-vision-sim/_deps/openxr_sdk-src/include";
+				XROS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Release;
+		};
+		565852000000000000000006 /* Debug configuration for PBXNativeTarget "VisionXR" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"XR_USE_GRAPHICS_API_METAL=1",
+					"XR_EXTENSION_PROTOTYPES=1",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../include",
+					"$(VISIONXR_OPENXR_INCLUDE_DIR)",
+				);
+				PRODUCT_NAME = openxr_loader;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+			};
+			name = Debug;
+		};
+		565852000000000000000007 /* Release configuration for PBXNativeTarget "VisionXR" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"XR_USE_GRAPHICS_API_METAL=1",
+					"XR_EXTENSION_PROTOTYPES=1",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../include",
+					"$(VISIONXR_OPENXR_INCLUDE_DIR)",
+				);
+				PRODUCT_NAME = openxr_loader;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3CD317AB307D74890013999F /* Build configuration list for PBXProject "testxr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CD317C3307D748B0013999F /* Debug configuration for PBXProject "testxr" */,
+				3CD317C4307D748B0013999F /* Release configuration for PBXProject "testxr" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		3CD317C0307D748B0013999F /* Build configuration list for PBXNativeTarget "testxr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CD317C1307D748B0013999F /* Debug configuration for PBXNativeTarget "testxr" */,
+				3CD317C2307D748B0013999F /* Release configuration for PBXNativeTarget "testxr" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		565852000000000000000005 /* Build configuration list for PBXNativeTarget "VisionXR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				565852000000000000000006 /* Debug configuration for PBXNativeTarget "VisionXR" */,
+				565852000000000000000007 /* Release configuration for PBXNativeTarget "VisionXR" */,
+			);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3CD317A8307D74890013999F /* Project object */;
+	validationLevel = 1;
+}
